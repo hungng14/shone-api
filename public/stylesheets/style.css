@@ -1,8 +1,203 @@
-body {
-  padding: 50px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+.bg-white{
+  background-color: #fff;
+}
+
+.bg-l-blue{
+  background-color: #A9BFD7;
+}
+header{
+  width: 100%;
+  height: 70px;
+  display: block;
+  background-color: #1da1f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.inner-header{
+  width: 80%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.brand{
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.brand a{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.brand h1{
+  color: #fff;
+}
+
+.navbar{
+  float: right;
+  height: 100%;
+}
+
+.hide{
+  display: none;
+}
+
+.navbar-nav{
+  height: 100%;
+  display: flex;
+}
+
+.navbar-nav li a{
+  font-family: 'Roboto', sans-serif;
+  line-height: 70px;
+  font-size: 16px;
+  color: rgb(243, 236, 236);
+  padding: 25px 20px;
+  
+}
+.navbar-nav li.active,
+.navbar-nav li:hover{
+  background: #006dbf;
+  transition: 1s;
+}
+.navbar-nav li a:hover{
+  color: #fff;
+}
+
+.form-group{
+  margin-bottom: 20px;
+}
+.form-control{
+  height: 40px;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+  padding-left: 5px;
+  border: 1px solid #dad8d8;
+  box-sizing: border-box;
+}
+.btn{
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.rd-4{
+  border-radius: 4px;
+}
+
+.divider{
+  height: 30px;
+  text-align: center;
+  width: 100%;
+  display: table;
+}
+
+.divider h4{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.main{
+  margin: 70px auto;
+}
+
+/* login */
+.sign-in{
+  background-color: #eee;
+}
+.sign-in .main{
+  padding-bottom:20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-wrapper h2{
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.sign-in-wrapper{
+  background-color: #fff;
+  padding: 20px;
+  width: 400px;
+}
+
+.sign-in-form .btn-sign-in-form{
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(13, 154, 118);
+}
+.sign-in-form .btn-sign-in-form:hover{
+  background-color: rgb(1, 97, 73);
+  transition: 1s;
+}
+
+.sign-in-connections{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.sign-in-connections button{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.sign-in-connections button:hover{
+  transition: 1s;
+}
+.sign-in-connections button:last-child{
+  margin-bottom: 0px;
+}
+.sign-in-connections .sign-in-gg{
+  background: #ff4500;
+  color: #fff;
+}
+.sign-in-connections .sign-in-gg:hover{
+  background: #bd3402;
+}
+.sign-in-connections .sign-in-fb{
+  background: rgb(59, 89, 152);
+  color: #fff;
+}
+.sign-in-connections .sign-in-fb:hover{
+  background: rgb(43, 71, 129);
+}
+.sign-in-connections .sign-in-tt{
+  background: rgb(29, 161, 242);
+  color: #fff;
+}
+.sign-in-connections .sign-in-tt:hover{
+  background: rgb(5, 116, 185);
+}
+
+

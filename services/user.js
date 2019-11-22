@@ -1,12 +1,20 @@
-const userModel = require('../models/user');
-const obj = {
-    username: 'shone',
-    password: 'test',
-    status: 1,
-    role: 1,
-    contact_o_id: '5dba983934866d56e4e9648e',
-};
-userModel.create(obj, (err, data) => {
-        console.log(err);
-        console.log(data); 
-});
+const CrudService = require('./crud');
+class UserService extends CrudService{
+    constructor() {
+        super();
+    }
+    async create(data) {
+        const obj = {
+            username: 'abc2',
+            password: 'abc2',
+            status: 1,
+            role: 1,
+            contact_o_id: '5dc377f06481462a7c9e05d4',
+        };
+        const result = await super.create(obj);
+        return result;
+    }
+}
+
+const user_instance = new UserService();
+module.exports = user_instance;
