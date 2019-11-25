@@ -108,6 +108,9 @@ header{
   border: none;
   cursor: pointer;
 }
+.btn:hover{
+  transition: 1s;
+}
 .rd-4{
   border-radius: 4px;
 }
@@ -175,9 +178,7 @@ header{
   margin-bottom: 20px;
   font-size: 18px;
 }
-.sign-in-connections button:hover{
-  transition: 1s;
-}
+
 .sign-in-connections button:last-child{
   margin-bottom: 0px;
 }
@@ -284,7 +285,6 @@ header{
   color: #fff;
   width: 100%;
   outline: none;
-  transition: 0.5s;
   font-size: 18px;
 }
 .sign-in-form .btn-s-i:hover{
