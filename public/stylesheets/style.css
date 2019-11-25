@@ -10,7 +10,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -32,6 +33,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .inner-header{
@@ -127,10 +129,11 @@ header{
   margin: 70px auto;
 }
 
-/* login */
-.sign-in{
+/* login.html */
+
+/* .sign-in{
   background-color: #eee;
-}
+} */
 .sign-in .main{
   padding-bottom:20px;
   padding-top: 20px;
@@ -200,4 +203,90 @@ header{
   background: rgb(5, 116, 185);
 }
 
+/* end login.html */
 
+
+
+/* new sign in */
+.sign-in{
+  background: url(https://previews.123rf.com/images/djsknkot/djsknkot1709/djsknkot170900309/86792757-the-sun-shone-across-the-river-at-dusk-in-the-background-.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-sign-in{
+  width: 100%;
+}
+.main-sign-in::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #024979;
+  opacity: 0.8;
+}
+.sign-in-form{
+  position: absolute;
+  top: calc(50% + 35px);
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  min-height: 400px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, .5);
+  padding: 50px;
+  box-sizing: border-box;
+}
+.sign-in-form h2{
+  color: #777;
+  margin: 0 0 40px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sign-in-form .input-box{
+  position: relative;
+  margin: 20px 0;
+}
+.sign-in-form .input-box:last-child{
+  margin-bottom: 0;
+}
+.sign-in-form .input-box input{
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #777;
+  outline: none;
+  padding: 10px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #777;
+}
+.sign-in-form .input-box input:focus,
+.sign-in-form .input-box input:valid
+{
+  border-bottom: 2px solid #1da1f2;
+}
+
+.sign-in-form .input-box .fa{
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  font-size: 18px;
+  color: #777;
+}
+.sign-in-form .btn-s-i{
+  border: none;
+  cursor: pointer;
+  background: #024979;
+  color: #fff;
+  width: 100%;
+  outline: none;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.sign-in-form .btn-s-i:hover{
+  background: #8215db;
+}
