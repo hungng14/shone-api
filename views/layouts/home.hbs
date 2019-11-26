@@ -1,16 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>{{title}}</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    {{> css}}
     <!-- Bootstrap CSS -->
-  </head>
-  <body>
-      {{{body}}}
+</head>
+
+<body>
+    {{> header}}
+    <main class="main">
+        {{> left_side_bar}}
+        {{{body}}}
+        {{> right_side_bar}}
+    </main>
     <!-- JavaScript -->
     {{> scripts}}
-  </body>
+</body>
+
 </html>

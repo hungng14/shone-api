@@ -24,21 +24,34 @@
                 <i class="fa fa-user"></i>
                 <input type="text" name="" placeholder="Username" id="">
             </div>
-            <div class="input-box">
+            <div class="input-box login-fileds_password">
                 <i class="fa fa-unlock-alt"></i>
                 <input type="password" name="" placeholder="Password" id="">
             </div>
-            <div class="input-box">
-                <button type="button" class="btn btn-s-i">Sign in</button>
+            <div class="forgot">
+                <a href="#">Forgot your password?</a>
+            </div>
+            <div class="fields-submit">
+                <button type="button" class="btn btn-s-i">
+                    Sign in
+                </button>
             </div>
         </form>
         <div class="divider">
-            <h4>or</h4>
+            <span>or Sign in with</span>
         </div>
         <div class="sign-in-connections">
-            <button type="button" class="btn sign-in-gg">Sign in with google</button>
-            <button type="button" class="btn sign-in-fb">Sign in with facebook</button>
-            <button type="button" class="btn sign-in-tt">Sign in with twitter</button>
+            <button type="button" class="btn sign-in-gg">
+                <i class="fa fa-google" aria-hidden="true"></i>
+                Google +
+            </button>
+            {{!-- <button type="button" class="btn sign-in-fb">Connect with facebook</button>
+            <button type="button" class="btn sign-in-tt">Connect with twitter</button> --}}
+        </div>
+        <div class="divider">
+        </div>
+        <div class="no-account">
+            <p>Don't have an account? <a href="#">Sign up here</a></p>
         </div>
     </div>
 </section>

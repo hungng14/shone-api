@@ -12,5 +12,5 @@ class LoginController extends BaseController{
     }
 }
 
-const login_con_ins = new LoginController();
-module.exports = login_con_ins;
+const con_ins = new LoginController();
+module.exports = con_ins;
