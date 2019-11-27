@@ -5,12 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    {{> css}}
+    <link rel="stylesheet" href="/stylesheets/layout_admin.css">
     <!-- Bootstrap CSS -->
   </head>
-  <body>
-      {{{body}}}
+  <body class="__main__admin">
+    {{> left_side_bar_admin}}
+    {{> header_admin}}
+    {{{body}}}
+    {{> modals/user}}
     <!-- JavaScript -->
-    {{> scripts}}
+    {{> scripts_admin}}
+    <script src="/js/user.js"></script>
   </body>
 </html>

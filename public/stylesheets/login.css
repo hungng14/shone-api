@@ -114,6 +114,10 @@
   padding: 50px;
   box-sizing: border-box;
 }
+.sign-in-form.admin{
+  left: 50%;
+  top: 50%;
+}
 .sign-in-form h2{
   color: #777;
   margin: 0 0 40px;

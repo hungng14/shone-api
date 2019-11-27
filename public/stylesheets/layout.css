@@ -93,7 +93,9 @@ header{
 .navbar-nav li a:hover{
   color: #fff;
 }
-
+.label-control{
+  margin-bottom: 5px;
+}
 .form-group{
   margin-bottom: 20px;
 }
@@ -111,9 +113,46 @@ header{
   outline: none;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 }
 .btn:hover{
   transition: 1s;
+}
+.btn-success{
+  background: #04ad45;
+  color: #fff;
+}
+.btn-info{
+  background: #054db9;
+  color: #fff;
+}
+.btn-danger{
+  background: #b80303;
+  color: #fff;
+}
+.btn-warning{
+  background: #e4cd05;
+  color: #000;
+}
+.btn-default{
+  background: #a0a0a0;
+  color: #000;
+}
+
+.btn-success:hover{
+  background: #038033;
+}
+.btn-info:hover{
+  background: #043f97;
+}
+.btn-danger:hover{
+  background: #880404;
+}
+.btn-warning:hover{
+  background: #f3db03;
+}
+.btn-default:hover{
+  background: #817f7f;
 }
 .rd-4{
   border-radius: 4px;
@@ -171,9 +210,9 @@ aside{
 }
 
 aside.left-side{
-    padding: 5px 0px;
-    padding-left: 50px;
-    position: fixed;
+  padding: 5px 0px;
+  padding-left: 50px;
+  position: fixed;
 }
 
 aside.right-side{
@@ -301,4 +340,34 @@ aside.right-side .top-reader .p-more a {
 }
 .__content__story p{
     margin-bottom: 10px;
+}
+.__item__story .__action__bar__inner{
+  display: flex;
+}
+.__action__bar__inner .__wrap__item{
+  margin: 10px ;
+  margin-bottom: 0;
+}
+
+.__action__item .__wrap__act__ct{
+  display: flex;
+  padding: 10px;
+  cursor: default;
+}
+
+.__action__item .__ui__btn__inner{
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.__action__item .__ui__btn__inner:hover{
+  background:#fafafa
+}
+
+.__wrap__act__ct div{
+  font-size: 15px;
+}
+.__wrap__act__ct div.__div{
+  width: 5px;
 }

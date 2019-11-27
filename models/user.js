@@ -2,11 +2,13 @@ const mongoose = require('mongoose');
 const auto_increment = require('mongoose-auto-increment');
 const { Schema } = mongoose;
 const { generatorTime } = require('../utils/shared');
+const { ENUM_STATUS, STATUS, ENUM_ROLES } = require('../settings/config').settings;
 const userSchema = new Schema({
     username: { type: String, unique: true, required: true, index: true },
+    email: { type: String, unique: true, required: true, index: true },
     password: { type: String, required: true },
-    status: { type: Number, required: true, enum: [0, 1, 2], index: true },
-    role: { type: Number, required: true, enum: [0, 1, 2], index: true },
+    status: { type: Number, default: STATUS.new, required: true, enum: ENUM_STATUS, index: true },
+    role: { type: Number, required: true, enum: ENUM_ROLES, index: true },
     contact_o_id: { type: mongoose.Schema.Types.ObjectId, ref: 'contact', required: true },
     created_at: { type: Date, required: true, default: generatorTime },
     created_by: { type: mongoose.Schema.Types.ObjectId, ref: 'user'},
